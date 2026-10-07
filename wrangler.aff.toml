@@ -1,0 +1,8 @@
+# Production worker "aff" serving aff.capgo.app (Affonso affiliate proxy).
+# Deploy manually: npm run deploy:aff
+name = "aff"
+main = "src/aff.ts"
+compatibility_date = "2024-01-01"
+
+[observability]
+enabled = true

@@ -121,3 +121,11 @@ This starts a local dev server at `http://localhost:8787`.
 ## License
 
 MIT
+
+## Affonso proxy (`aff` worker)
+
+`src/aff.ts` with `wrangler.aff.toml` is the Capgo production worker `aff` that serves `aff.capgo.app` and proxies the [Affonso](https://affonso.io) affiliate pixel and APIs (`/r/pixel.js`, `/r/track`, `/r/signups`, plus legacy paths). Unknown paths return 404 and the visitor IP is forwarded via `X-Forwarded-For`.
+
+```bash
+npm run deploy:aff
+```

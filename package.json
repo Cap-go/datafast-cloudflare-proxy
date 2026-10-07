@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "tail": "wrangler tail"
+    "tail": "wrangler tail",
+    "dev:aff": "wrangler dev -c wrangler.aff.toml",
+    "deploy:aff": "wrangler deploy -c wrangler.aff.toml",
+    "tail:aff": "wrangler tail -c wrangler.aff.toml"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241230.0",
